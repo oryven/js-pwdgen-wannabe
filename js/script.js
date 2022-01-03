@@ -12,9 +12,9 @@ let colore = prompt("Scrivi il tuo colore preferito")
 
 // password 
 
-let password = nome + cognome + colore + 21;
+const password = nome + cognome + colore + Math.floor(Math.random () * 99 + 1) ;
+console.log(password);
 
 // stampa password sul browser
 
 document.getElementById("dati-utente").innerHTML = "La tua password è: " + password;
-
